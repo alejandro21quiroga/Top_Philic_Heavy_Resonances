@@ -20,11 +20,10 @@
  set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
 
 # specify the decay for the final state particles
-define lep = ve~ vm~ vt~ e- mu- ta-
-define all_p = ve vm vt e+ mu+ ta+ g u c d s b u~ c~ d~ s~ b~
-decay t > w+ b, w+ > all_p all_p
-decay t~ > w- b~, w- > lep lep
-decay w+ > all_p all_p
-decay w- > lep lep
+decay t > w+ b, w+ > all all
+decay t~ > w- b~, w- > all all
+decay w+ > all all
+decay w- > all all
+decay z > all all
 # running the actual code
 launch
