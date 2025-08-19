@@ -1,0 +1,10 @@
+import model $HOME/MadGraph/MG5_aMC_v3_5_6/topponium_UFO
+define lep = ve~ vm~ vt~ e- mu- ta-
+define all_p = ve vm vt e+ mu+ ta+ g u c d s b u~ c~ d~ s~ b~
+generate p p > eta > w+ w- b b~,  w+ > all_p all_p, w- > lep lep
+output toponium-boundstate_exclusive_W_minus_condor -nojpeg
+
+launch
+
+run_card.dat
+param_card.dat
