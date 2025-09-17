@@ -39,12 +39,16 @@ SigmaTotal:sigmaTot = 100.309
 
 SpaceShower:pTmaxMatch = 1
 SpaceShower:pTmaxFudge = 1
+SpaceShower:MEcorrections = off
 TimeShower:pTmaxMatch = 1
 TimeShower:pTmaxFudge = 1
-SpaceShower:MEcorrections = off
 TimeShower:MEcorrections = off
 TimeShower:globalRecoil = on
-TimeShower:weightGluonToQuark = 1 
+TimeShower:limitPTmaxGlobal = on
+TimeShower:nMaxGlobalRecoil = 1
+TimeShower:globalRecoilMode = 2
+TimeShower:nMaxGlobalBranch = 1
+TimeShower:weightGluonToQuark = 1
 
 # Top mass
 6:m0 = 172.5
